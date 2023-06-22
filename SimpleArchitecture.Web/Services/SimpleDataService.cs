@@ -14,11 +14,11 @@ namespace SimpleArchitecture.Web.Services
         }
 
 
-        public async Task<List<Model>> GetModels()
+        public async Task<List<CarModel>> GetModels()
         {
             var response = await _apiNameNetwork.GetData("http://somesite.ru");
 
-            var listModels = JsonConvert.DeserializeObject<List<Model>>(response.Data);
+            var listModels = JsonConvert.DeserializeObject<List<CarModel>>(response.Data);
 
             return listModels;
         }

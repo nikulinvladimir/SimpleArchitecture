@@ -1,6 +1,6 @@
 ﻿namespace SimpleArchitecture.Web.Models
 {
-    public class Model
+    public class CarModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
